@@ -43,12 +43,12 @@ $(function () {
 
 
     // TODO 3 - Create Collectables
-    createCollectable("diamond", 360, 650, 0.5, 1);
-    createCollectable("grace", 700, 650, 0.5, 1);
-    createCollectable("grace", 800, 650, 0.5, 1)
-    createCollectable("steve", 300, 250, 0.5, 1);
-    createCollectable("kennedi", 900, 250, 0.5, 1);
-    createCollectable("max", 1150, 180, 0.5, 1);
+    createCollectable("watermelonSeed", 360, 650, 0.5, 1);
+    createCollectable("watermelonSeed", 700, 650, 0.5, 1);
+    createCollectable("watermelonSeed", 800, 650, 0.5, 1)
+    createCollectable("watermelonSeed", 300, 250, 0.5, 1);
+    createCollectable("watermelonSeed", 900, 250, 0.5, 1);
+    createCollectable("watermelonSeed", 1150, 180, 0.5, 1);
 
 
 
