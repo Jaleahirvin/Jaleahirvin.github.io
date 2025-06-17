@@ -42,9 +42,15 @@ var background = function (window) {
             // TODO 1:
             // this currently fills the background with an obnoxious yellow;
             // you should modify both the height and color to suit your game
-            var backgroundFill = draw.rect(canvasWidth,groundY,'black');
-            background.addChild(backgroundFill);
-            
+           var backgroundImage = new Image();
+            backgroundImage.src = "img/witchbackground.png";
+            backgroundImage.onload = function() {
+                var backgroundFill = new createjs.Bitmap(backgroundImage);               
+                backgroundFill.scaleX = app.canvas.width / backgroundImage.width;
+                backgroundFill.scaleY = groundY / backgroundImage.height;
+                background.addChildAt(backgroundFill, 0); 
+            };
+            /*
             // TODO 2: - Add a moon and starfield
             var moon = draw.bitmap("img/moon.png");
             moon.x = canvasWidth - 250;
@@ -62,7 +68,7 @@ var background = function (window) {
             
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             for(var i = 0; i < 5; i++){
-                var buildingColors = ["lightblue", "Pink", "yellow", " green", "white"]
+                var buildingColors = ["#E6E6FA", "#bcf5bc", "#FFFFED", "#E6E6FA", "#FFFFED"]
                 var buildingHeight = 200 *Math.random();
                 var building = draw.rect(75, buildingHeight, buildingColors[i], "pink" , 1);  
                 building.x = 200 * i;
@@ -70,9 +76,9 @@ var background = function (window) {
                 background.addChild(building);
                 buildings.push(building);
             }
-            
+            */
             // TODO 3: Part 1 - Add a tree
-            tree = draw.bitmap("img/tree.png");
+            tree = draw.bitmap("img/witchtree.png");
             tree.x = 300;
             tree.y = groundY-225;
             background.addChild(tree);

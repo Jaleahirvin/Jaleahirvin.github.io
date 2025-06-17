@@ -15,9 +15,15 @@ var makeLevelData = function (window) {
         number: 1,
         speed: -3,
         gameItems: [
-          { type: "sawblade", x: 400, y: groundY },
-          { type: "sawblade", x: 600, y: groundY },
-          { type: "sawblade", x: 900, y: groundY },
+          { type: "sawblade", x: 400, y: groundY - 125, damage: 10},
+          { type: "sawblade", x: 600, y: groundY - 125, damage: 10},
+          { type: "sawblade", x: 800, y: groundY - 125, damage: 15},
+          { type: "enemy", x: 600, y: groundY - 30, speed: -3, image: "img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},
+          { type: "enemy", x: 900, y: groundY - 30, speed: -2, image: "img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},
+          { type: "enemy", x: 1150, y: groundY - 30, speed: -2, image:"img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},
+          { type: "reward", x: 1000, y: groundY - 75, speed: -3,image: "img/wandreward.png", offsetX: -50, offsetY: -50, scale: 0.3},
+          { type: "marker", x: 1500, y: groundY - 75, speed: -3, image: "img/blackcat.png", offsetX: -50, offsetY: -50, scale: 0.3 },
+
         ],
       },
       {
@@ -28,6 +34,11 @@ var makeLevelData = function (window) {
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
           { type: "sawblade", x: 900, y: groundY },
+          { type: "enemy", x: 600, y: groundY - 30, speed: -3, image: "img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},
+          { type: "enemy", x: 900, y: groundY - 30, speed: -2, image: "img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},
+          { type: "enemy", x: 1150, y: groundY - 30, speed: -2, image:"img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},
+          { type: "reward", x: 1000, y: groundY - 75, speed: -3, image: "img/wandreward.png", offsetX: -50, offsetY: -50, scale: 0.3},
+          { type: "marker", x: 1500, y: groundY - 75, speed: -3, image: "img/blackcat.png", offsetX: -50, offsetY: -50, scale: 0.3},
         ],
       },
     ];
