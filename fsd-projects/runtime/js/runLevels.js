@@ -20,18 +20,20 @@ var runLevels = function (window) {
     // BEGIN EDITING YOUR CODE HERE
     
     
-    function createSawBlade (x, y, damage){
+    function createSawBlade (x, y, damage, image, offsetX, offsetY, scale, rotation){
       var hitZoneSize = 25;
       var damageFromObstacle = damage;
       var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
       sawBladeHitZone.x = x;
       sawBladeHitZone.y = y;
-
-      sawBladeHitZone.rotationVelocity = 30;
+      
+      sawBladeHitZone.rotationVelocity = rotation;
       game.addGameItem(sawBladeHitZone);
-      var obstacleImage = draw.bitmap("img/sawblade.png");
-      obstacleImage.x = -25;
-      obstacleImage.y = -25;
+      var obstacleImage = draw.bitmap(image);
+      obstacleImage.x = offsetX;
+      obstacleImage.y = offsetY;
+      obstacleImage.scaleX = scale;
+      obstacleImage.scaleY = scale;
       sawBladeHitZone.addChild(obstacleImage);
     }
 
@@ -116,7 +118,7 @@ var runLevels = function (window) {
         var element = levelObjects[i];
         
         if(element.type === "sawblade"){
-          createSawBlade(element.x, element.y, element.damage);
+          createSawBlade(element.x, element.y, element.damage, element.image, element.offsetX, element.offsetY, element.scale, element.rotation);
         }
 
         if(element.type === "enemy"){
@@ -128,7 +130,7 @@ var runLevels = function (window) {
         }
 
         if(element.type === "marker"){
-          createMarker(element.x, element.y, element.speed);
+          createMarker(element.x, element.y, element.speed, element.image, element.offsetX, element.offsetY, element.scale);
         }
 
       }

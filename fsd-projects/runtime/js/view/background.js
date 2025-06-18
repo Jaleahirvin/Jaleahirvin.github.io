@@ -80,7 +80,7 @@ var background = function (window) {
             // TODO 3: Part 1 - Add a tree
             tree = draw.bitmap("img/witchtree.png");
             tree.x = 300;
-            tree.y = groundY-225;
+            tree.y = groundY-348;
             background.addChild(tree);
             
         } // end of render function - DO NOT DELETE
@@ -97,7 +97,7 @@ var background = function (window) {
             // TODO 3: Part 2 - Move the tree!
             tree.x -= 5;
 
-            if(tree.x <-250){
+            if(tree.x <-500){
                 tree.x = canvasWidth + 100
             }
             
