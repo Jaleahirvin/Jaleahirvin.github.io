@@ -21,8 +21,8 @@ var makeLevelData = function (window) {
           { type: "enemy", x: 600, y: groundY - 30, speed: -3, image: "img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},// creates the image which is the spell book
           { type: "enemy", x: 900, y: groundY - 30, speed: -2, image: "img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},// also creates the image which is the spell book
           { type: "enemy", x: 1150, y: groundY - 30, speed: -2, image:"img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},// makes the image spell book
-          { type: "reward", x: 1000, y: groundY - 75, speed: -3,image: "img/wandreward.png", offsetX: -50, offsetY: -50, scale: 0.3},// makes the image reward wand 
-          { type: "marker", x: 1500, y: groundY - 75, speed: -3, image: "img/blackcat.png", offsetX: -50, offsetY: -70, scale: 0.3 },// makes the image marker black cat
+          { type: "reward", x: 1000, y: groundY - 85, speed: -3,image: "img/wandreward.png", offsetX: -50, offsetY: -50, scale: 0.3},// makes the image reward wand 
+          { type: "marker", x: 1500, y: groundY - 75, speed: -3, image: "img/blackcat.png", offsetX: -50, offsetY: -80, scale: 0.3 },// makes the image marker black cat
 
         ],
       },
@@ -38,7 +38,7 @@ var makeLevelData = function (window) {
           { type: "enemy", x: 900, y: groundY - 30, speed: -2, image: "img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},// also creates the image which is the spell book
           { type: "enemy", x: 1150, y: groundY - 30, speed: -2, image:"img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},// makes the image spell book
           { type: "reward", x: 1000, y: groundY - 75, speed: -3, image: "img/witch wand (2).png", offsetX: -50, offsetY: -50, scale: 0.1},// makes the 2nd reward wand image
-          { type: "marker", x: 1500, y: groundY - 80, speed: -3, image: "img/blackcat.png", offsetX: -50, offsetY: -70, scale: 0.3},// makes the image marker black cat
+          { type: "marker", x: 1500, y: groundY - 80, speed: -3, image: "img/blackcat.png", offsetX: -50, offsetY: -80, scale: 0.3},// makes the image marker black cat
         ],
       },
       {
@@ -53,7 +53,7 @@ var makeLevelData = function (window) {
           { type: "enemy", x: 900, y: groundY - 30, speed: -2, image: "img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},// also creates the image which is the spell book
           { type: "enemy", x: 1150, y: groundY - 30, speed: -2, image:"img/witchspellbook.png", offsetX: -50, offsetY: -50, scale: 0.1},// makes the image spell book
           { type: "reward", x: 1000, y: groundY - 75, speed: -3, image: "img/wandreward.png", offsetX: -50, offsetY: -50, scale: 0.3},// makes the image reward wand
-          { type: "marker", x: 1500, y: groundY - 80, speed: -3, image: "img/blackcat.png", offsetX: -50, offsetY: -70, scale: 0.3},// makes the image marker black cat
+          { type: "marker", x: 1500, y: groundY - 80, speed: -3, image: "img/blackcat.png", offsetX: -50, offsetY: -80, scale: 0.3},// makes the image marker black cat
         ],
       },
     ];
